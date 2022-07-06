@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import logo from './../../assets/icons/img_intro_logo_dark.svg'
+import { Link, Outlet } from 'react-router-dom';
 
 const StyledHeader = styled.header`
   display : flex;
@@ -31,12 +32,15 @@ const StyledReser = styled.div`
 
 const Header = () => {
   return (
-    <>
+    <div>
     <StyledHeader>
-      <StyledLogo></StyledLogo>
+      <Link to="/"><StyledLogo></StyledLogo></Link>
       <StyledReser>내 예약</StyledReser>
     </StyledHeader>
-    </>
+    <main>
+      <Outlet/>
+    </main>
+    </div>
   );
 };
 

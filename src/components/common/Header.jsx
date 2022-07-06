@@ -13,20 +13,18 @@ const StyledHeader = styled.header`
   padding-right : 3rem;
 `;
 
-const StyledLogo = styled.img`
+const StyledLogo = styled.img.attrs({
+  src: `${logo}`
+})`
   display : block;
-  background-image : url(${logo});
-  border : none;
   width : 57px;
-  height : 20px; 
-  // margin-left : 3rem;
-`;
+  height : 20px;
+`
 
 const StyledReser = styled.div`
   // color : rgb(255,255,255);
   color : black;
   font-weight : 500;
-  // margin-right : 3rem;
   margin-left : auto;
 `;
 
@@ -34,7 +32,9 @@ const Header = () => {
   return (
     <div>
     <StyledHeader>
-      <Link to="/"><StyledLogo></StyledLogo></Link>
+      <Link to="/">
+        <StyledLogo></StyledLogo>
+        </Link>
       <StyledReser>내 예약</StyledReser>
     </StyledHeader>
     <main>

@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import Triple from './../pages/Section/Triple';
 import Travel from './../pages/Section/Travel';
 import Award from "./Section/Award";
+import { CSSTransition } from "react-transition-group";
 
 const StyledSection = styled.div`
   // background-color : red;

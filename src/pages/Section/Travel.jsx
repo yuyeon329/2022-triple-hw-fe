@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 const StyledTravelMent = styled.div`
   font-size : 36px;
-  margin : 0 0 20px;
+  margin : 0 0 15px;
 `;
 
 const StyledBoldFont = styled.span`
@@ -12,7 +12,7 @@ const StyledBoldFont = styled.span`
 
 const StyledTravel = styled.div`
   position : absolute;
-  left : 600px;
+  left : 650px;
   top : 180px;
 `;
 

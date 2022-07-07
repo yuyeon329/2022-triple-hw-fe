@@ -5,12 +5,12 @@ import Travel from './../pages/Section/Travel';
 import Award from "./Section/Award";
 
 const StyledSection = styled.div`
-  background-color : red;
+  // background-color : red;
   height : 35vw;
 `;
 
 const StyledDiv = styled.div`
-  background-color : blue;
+  // background-color : blue;
   width : 60vw;
   height : 35vw;
   margin : auto;

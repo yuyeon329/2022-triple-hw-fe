@@ -2,6 +2,7 @@ import React from "react";
 import styled from 'styled-components';
 import Triple from './../pages/Section/Triple';
 import Travel from './../pages/Section/Travel';
+import Award from "./Section/Award";
 
 const StyledSection = styled.div`
   background-color : red;
@@ -10,7 +11,7 @@ const StyledSection = styled.div`
 
 const StyledDiv = styled.div`
   background-color : blue;
-  width : 70vw;
+  width : 60vw;
   height : 35vw;
   margin : auto;
   position : relative;
@@ -32,6 +33,7 @@ const Section = () => {
           <StyledMent>2021년 12월 기준</StyledMent>
 
           <Travel></Travel>
+          <Award></Award>
         </StyledDiv>
         </StyledSection>
     </div>

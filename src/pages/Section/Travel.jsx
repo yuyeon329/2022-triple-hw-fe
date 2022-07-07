@@ -2,7 +2,7 @@ import React from "react";
 import styled from 'styled-components';
 
 const StyledTravelMent = styled.div`
-  font-size : 25px;
+  font-size : 36px;
   margin : 0 0 20px;
 `;
 
@@ -12,7 +12,7 @@ const StyledBoldFont = styled.span`
 
 const StyledTravel = styled.div`
   position : absolute;
-  left : 700px;
+  left : 600px;
   top : 180px;
 `;
 

@@ -8,6 +8,7 @@ const StyledImage = styled.img.attrs({
   margin-top : 178px;
   width : 400px;
   height : auto;
+  position : absolute;
 `;
 
 const Triple = () => {

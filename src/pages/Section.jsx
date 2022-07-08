@@ -1,9 +1,8 @@
 import React from "react";
-import styled from 'styled-components';
+import styled, {keyframes} from 'styled-components';
 import Triple from './../pages/Section/Triple';
 import Travel from './../pages/Section/Travel';
 import Award from "./Section/Award";
-import { CSSTransition } from "react-transition-group";
 
 const StyledSection = styled.div`
   // background-color : red;
@@ -24,17 +23,59 @@ const StyledMent = styled.div`
   left : 140px;
 `;
 
+//ani
+
+const floating1 = keyframes`
+  0% {
+    transform: translate(0,0);
+    opacity : 0;
+  }
+
+  50% {
+    opacity : 0.5;
+  }
+
+  100% {
+    transform: translate(0,-15px);
+    opacity : 1;
+  }
+`;
+
+const StyledAni1 = styled.div`
+  animation: ${floating1} 700ms;
+  animation-fill-mode : forwards;
+`;
+
+const StyledAni2 = styled.div`
+  animation: ${floating1} 700ms;
+  animation-delay : 100ms;
+  animation-fill-mode : forwards;
+`;
+
+const StyledAni3 = styled.div`
+  animation: ${floating1} 700ms;
+  animation-delay : 200ms;
+  animation-fill-mode : forwards;
+`; 
+
 const Section = () => {
   return(
     <div>
       <StyledSection>
         <StyledDiv>
 
-          <Triple></Triple>
+          <StyledAni1>
+          <Triple/>
           <StyledMent>2021년 12월 기준</StyledMent>
+          </StyledAni1>
 
-          <Travel></Travel>
-          <Award></Award>
+          <StyledAni2>
+            <Travel/>
+          </StyledAni2>
+
+          <StyledAni3>
+            <Award/>
+          </StyledAni3>
         </StyledDiv>
         </StyledSection>
     </div>

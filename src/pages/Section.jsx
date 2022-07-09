@@ -21,6 +21,7 @@ const StyledMent = styled.div`
   position : absolute;
   top : 450px;
   left : 140px;
+  color : rgba(58, 58, 58, 0.7);
 `;
 
 //ani

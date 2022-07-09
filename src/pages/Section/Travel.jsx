@@ -5,7 +5,8 @@ import useCounter from "../../hooks/useCounter";
 
 const StyledTravelMent = styled.div`
   font-size : 36px;
-  margin : 0 0 15px;
+  margin : 0 0 10px;
+  color : rgba(58, 58, 58, 1);
 `;
 
 const StyledBoldFont = styled.span`

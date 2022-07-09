@@ -33,6 +33,7 @@ const StyledAwardMent = styled.div`
   padding-left : 10px;
   padding-top : 5px;
   color : rgba(58, 58, 58, 0.8);
+  font-weight : bold;
 `;
 
 const StyledDiv = styled.div`

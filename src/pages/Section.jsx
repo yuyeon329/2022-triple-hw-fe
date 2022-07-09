@@ -1,8 +1,8 @@
-import React from "react";
+import React from 'react';
 import styled, {keyframes} from 'styled-components';
-import Triple from './../pages/Section/Triple';
-import Travel from './../pages/Section/Travel';
-import Award from "./Section/Award";
+import Triple from './Section/Triple';
+import Travel from './Section/Travel';
+import Award from './Section/Award';
 
 const StyledSection = styled.div`
   // background-color : red;
@@ -23,8 +23,6 @@ const StyledMent = styled.div`
   left : 140px;
   color : rgba(58, 58, 58, 0.7);
 `;
-
-//ani
 
 const floating1 = keyframes`
   0% {
@@ -66,8 +64,8 @@ const Section = () => {
         <StyledDiv>
 
           <StyledAni1>
-          <Triple/>
-          <StyledMent>2021년 12월 기준</StyledMent>
+            <Triple/>
+            <StyledMent>2021년 12월 기준</StyledMent>
           </StyledAni1>
 
           <StyledAni2>
@@ -77,8 +75,9 @@ const Section = () => {
           <StyledAni3>
             <Award/>
           </StyledAni3>
+
         </StyledDiv>
-        </StyledSection>
+      </StyledSection>
     </div>
   );
 }

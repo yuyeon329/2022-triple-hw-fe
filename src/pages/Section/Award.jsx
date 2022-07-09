@@ -1,7 +1,7 @@
-import React from "react";
-import styled from "styled-components";
-import playstore from "./../../assets/images/play-store2x.png";
-import appstore from "./../../assets/images/badge-apple4x.png";
+import React from 'react';
+import styled from 'styled-components';
+import playstore from './../../assets/images/play-store2x.png';
+import appstore from './../../assets/images/badge-apple4x.png';
 
 const StyledPlayPlayStore = styled.img.attrs({
   src: `${playstore}`

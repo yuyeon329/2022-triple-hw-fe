@@ -1,4 +1,6 @@
-# Triple 2022 공개채용 FE HomeWork
+# Triple 2022 공개채용 FE HomeWork  
+![Triple_2022_HW](https://user-images.githubusercontent.com/73763069/178102776-8bafca36-e7d1-41ae-8b96-eb7c88b68ed2.gif)
+
 
 ### 프로젝트 실행 방법  
 1. clone하고자 하는 디렉토리로 이동

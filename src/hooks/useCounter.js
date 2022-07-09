@@ -20,7 +20,9 @@ function useCounter(info){
         clearInterval(counter);
       }
     }, step)
-  }, [info.end, step, fps])
+  // }, [info.end, step, fps]);
+  // }, [step]);
+}, []);
   
   return {__html : count};
 }

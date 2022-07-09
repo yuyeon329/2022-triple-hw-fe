@@ -25,7 +25,7 @@ const StyledAward = styled.div`
   width : 240px;
   height : 64px;
   display : flex;
-  margin-right : 39px;
+  margin-right : 20px;
 `;
 
 const StyledAwardMent = styled.div`

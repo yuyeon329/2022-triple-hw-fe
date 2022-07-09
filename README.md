@@ -15,18 +15,57 @@ npm version : 8.5.0
     - Styled Component : 각 React 컴포넌트에 종속되는 스타일을 적용하기 위해 사용하였습니다.  
     ```javascript
     const StyledPlayPlayStore = styled.img.attrs({
-  src: `${playstore}`
-})`
-  display : block;
-  width : 54px;
-  height : 54px;
-`
+      src: `${playstore}`
+     })`
+      display : block;
+      width : 54px;
+      height : 54px;
+      `
 
     ```
 
     - React Hook : 특정 컴포넌트가 렌더링 될 때마다 원하는 작업을 수행할 수 있도록 useEffectHook을 사용하였습니다.  
-    ![image](https://user-images.githubusercontent.com/73763069/178100913-c9182795-a91b-4744-b730-931d78693e22.png)
+    페이지가 로딩 될 때, 실행될 수 있도록 deps에 빈 배열을 넣었습니다. 
+    ```javascript
+      useEffect(()=> {
+      let now = 0;
+      const counter = setInterval(() => {
+        now += 1;
+        const vel = easeOutQuint(now / step)
+        setCount(Math.round(info.end * vel));
+
+        if(vel == 1) {
+          clearInterval(counter);
+        }
+      }, step)
+    }, []);
+    ```
 
 
-    - Custom Hook :
+    - Custom Hook : 숫자가 증가하는 애니메이션을 구현하기 위해 Custom Hook을 이용했습니다.  
+    각 숫자는 종료 수치만 다르고 모두 같은 로직을 공유하므로 컴포넌트 로직을 함수로 만들어서 재사용하였습니다.
+    ```javascript
+      function useCounter(info){
+        const [count, setCount] = useState(0)
+        const fps = 1000 / 60
+        const step = Math.round(800 / fps)
+
+        useEffect(()=> {
+          let now = 0;
+          const counter = setInterval(() => {
+            now += 1;
+            const vel = easeOutQuint(now / step)
+            setCount(Math.round(info.end * vel));
+
+            if(vel == 1) {
+              clearInterval(counter);
+            }
+          }, step)
+        }, []);
+  
+        return {__html : count};
+      }
+
+      export default useCounter;
+    ```
 

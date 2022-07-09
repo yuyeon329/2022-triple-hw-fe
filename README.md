@@ -42,7 +42,7 @@ npm version : 8.5.0
     ```
 
 
-    - Custom Hook : 숫자가 증가하는 애니메이션을 구현하기 위해 Custom Hook을 이용했습니다.  
+    - Custom Hook : 숫자가 증가하는 애니메이션을 구현하기 위해 Custom Hook을 구현했습니다.  
     각 숫자는 종료 수치만 다르고 모두 같은 로직을 공유하므로 컴포넌트 로직을 함수로 만들어서 재사용하였습니다.
     ```javascript
       function useCounter(info){

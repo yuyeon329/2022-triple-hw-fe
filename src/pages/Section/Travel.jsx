@@ -23,9 +23,9 @@ const Travel = () => {
   return (
     <>
     <StyledTravel>
-    <StyledTravelMent><StyledBoldFont><span dangerouslySetInnerHTML={useCounter({start:0, end:700})}></span>만 명의</StyledBoldFont> 여행자</StyledTravelMent>
-    <StyledTravelMent><StyledBoldFont><span dangerouslySetInnerHTML={useCounter({start:0, end:100})}></span>만 개의</StyledBoldFont> 여행 리뷰</StyledTravelMent>
-    <StyledTravelMent><StyledBoldFont><span dangerouslySetInnerHTML={useCounter({start:0, end:470})}></span>만 개의</StyledBoldFont> 여행 일정</StyledTravelMent>
+    <StyledTravelMent><StyledBoldFont><span dangerouslySetInnerHTML={useCounter({end:700})}></span>만 명의</StyledBoldFont> 여행자</StyledTravelMent>
+    <StyledTravelMent><StyledBoldFont><span dangerouslySetInnerHTML={useCounter({end:100})}></span>만 개의</StyledBoldFont> 여행 리뷰</StyledTravelMent>
+    <StyledTravelMent><StyledBoldFont><span dangerouslySetInnerHTML={useCounter({end:470})}></span>만 개의</StyledBoldFont> 여행 일정</StyledTravelMent>
     </StyledTravel>
     </>
   );

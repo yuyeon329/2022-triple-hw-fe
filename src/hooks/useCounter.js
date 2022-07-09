@@ -5,21 +5,22 @@ function easeOutQuint(num) {
 }
 
 function useCounter(info){
-  const [count, setCount] = useState(info.start)
+  const [count, setCount] = useState(0)
   const fps = 1000 / 60
   const step = Math.round(800 / fps)
 
   useEffect(()=> {
-    let now = info.start;
+    let now = 0;
     const counter = setInterval(() => {
-      const vel = easeOutQuint(++now / step)
+      now += 1;
+      const vel = easeOutQuint(now / step)
       setCount(Math.round(info.end * vel));
 
-      if(vel === 1) {
+      if(vel == 1) {
         clearInterval(counter);
       }
     }, step)
-  }, [info.start, info.end, step, fps])
+  }, [info.end, step, fps])
   
   return {__html : count};
 }

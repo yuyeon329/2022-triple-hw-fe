@@ -67,5 +67,8 @@ npm version : 8.5.0
       }
 
       export default useCounter;
-    ```
+    ```  
+### 컴포넌트 구획 기준  
+![image](https://user-images.githubusercontent.com/73763069/178102014-509ba0f2-c206-47c3-b7b4-f425bbc30572.png)  
+
 

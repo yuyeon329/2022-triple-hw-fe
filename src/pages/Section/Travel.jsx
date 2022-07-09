@@ -1,5 +1,7 @@
 import React from "react";
 import styled from 'styled-components';
+import useCounter from "../../hooks/useCounter";
+
 
 const StyledTravelMent = styled.div`
   font-size : 36px;
@@ -20,9 +22,9 @@ const Travel = () => {
   return (
     <>
     <StyledTravel>
-    <StyledTravelMent><StyledBoldFont>0만 명의</StyledBoldFont> 여행자</StyledTravelMent>
-    <StyledTravelMent><StyledBoldFont>0만 개의</StyledBoldFont> 여행 리뷰</StyledTravelMent>
-    <StyledTravelMent><StyledBoldFont>0만 개의</StyledBoldFont> 여행 일정</StyledTravelMent>
+    <StyledTravelMent><StyledBoldFont><span dangerouslySetInnerHTML={useCounter({start:0, end:700})}></span>만 명의</StyledBoldFont> 여행자</StyledTravelMent>
+    <StyledTravelMent><StyledBoldFont><span dangerouslySetInnerHTML={useCounter({start:0, end:100})}></span>만 개의</StyledBoldFont> 여행 리뷰</StyledTravelMent>
+    <StyledTravelMent><StyledBoldFont><span dangerouslySetInnerHTML={useCounter({start:0, end:470})}></span>만 개의</StyledBoldFont> 여행 일정</StyledTravelMent>
     </StyledTravel>
     </>
   );
